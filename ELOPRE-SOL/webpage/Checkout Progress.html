@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Order Form-Ellegona</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+	<script type="text/javascript">
+		function changeColor(){
+			let color = document.getElementById('BGColor');
+			document.body.style.backgroundColor = color.value;
+		}
+		function changeText(){
+			let text = prompt("Enter a Text:");
+			if(text == null || text == ""){
+				alert("Input Required!");
+			}else{
+                document.getElementById('toChangeText').innerHTML = text;
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="">Item</a></li>
+				<li><a href="">Contact</a></li>
+				<li><a href="Checkout Progress.html "class="active">Checkout Process</a></li>
+			</ul>
+
+		</div>
+		<div class="banner">
+			<img src="../images/image.png">
+		</div>
+		<div class="main">
+			<div class="content-contact">
+				<h1 id="toChangeText" onclick="changeText()">Order Now</h1>
+				<h2 >Order Form</h2>
+				<p>Please use this form to send us your questions and inquiry. </p>
+
+				<form name="Checkout Progress" method="" action="">
+					<label>Name:</label><br>
+
+					<input type="text" name="txtName" id="txtName" placeholder="Enter Your Name" required value=""><br><br>
+					<label>Email:</label><br>
+					<input type="email" name="txtEmail" id="txtEmail" required placeholder="Enter Your Email"><br><br>
+
+					<label>Contact Number:</label><br>
+					<input type="tel" name="txtCNumber" id="txtCNumber" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX"><br><br>
+
+					<label>Order Details</label><br>
+					<input type="text" name="txtOrder Details" id="txtOrder Details"><br><br>
+
+					<label>Price</label><br>
+					<input type="number" name="txtPrice" id="txtPrice"><br><br>
+
+
+					<label>Quantity</label><br>
+					<input type="number" name="txtQuantity" id="txtQuantity"><br><br>
+
+					<label>Location</label><br>
+					<input type="text" name="txtLocation" id="txtLocation"><br><br>
+
+					<label>Courier:</label><br>
+					<input type="radio" name="rdCourier" id="rdCourier"><label>JNT</label><br>
+					<input type="radio" name="rdCourier" id="rdCourier"><label>Flash Express</label><br><br>
+
+					<label>Payment Information:</label><br>
+					<input type="checkbox" name="chkGC" id="chkGC">
+					<label>G Cash</label><br>
+					<input type="checkbox" name="chkPY" id="chkPY">
+					<label>Paymaya</label><br>
+					<input type="checkbox" name="chkCOD" id="chkCOD">
+					<label>Cash Onhand</label><br><br>
+
+					<label>Terms and Condition:</label><br>
+					<select name="sltNetPro">
+						<option value="Return Policy">Return Policy</option>
+						<option value="Refund Policy">Refund Policy</option>
+						<option value="Privacy Policy">Privacy Policy</option>
+					</select><br><br>
+
+
+					<button type="submit">SEND</button>
+					<button type="reset">CLEAR</button>
+				</form>
+			</div>
+			<div class="right-side-bar">
+				<ul>
+					<li><img src="../images/image2.png"></li>
+					<li><img src="../images/image3.png"></li>
+					<li><img src="../images/image4.png"></li>
+					<li><img src="../images/image5.png"></li>	
+				</ul>
+			</div>
+			<div class="footer">
+				<p>&copy; 2019 Bantay Boac Marinduque <br> 
+				Cp No. 0951-645-6590.All Rights Reserved.</p>
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+</html>
